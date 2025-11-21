@@ -1,6 +1,6 @@
 import { createElement as h, render } from './react-lite.js';
 
-const VERSION = '1.2.0';
+const VERSION = '1.3.0';
 const STORAGE_KEY = 'map-config-v1';
 
 const DEFAULT_FIELDS = [
@@ -79,20 +79,30 @@ function buildCountryIndex(svg) {
   return { nodes, nameIndex };
 }
 
-function applyGroupsToMap(groups, countries) {
-  const colorById = new Map();
+function buildGroupIndex(groups) {
+  const index = new Map();
   groups.forEach((group) => {
     const ids = (group.countries || []).map((code) => code.trim().toUpperCase()).filter(Boolean);
-    ids.forEach((id) => colorById.set(id, group.color || '#38bdf8'));
+    ids.forEach((id) => index.set(id, group));
   });
+  return index;
+}
 
-  countries.forEach(({ id, element }) => {
-    const color = colorById.get(id);
-    element.style.transition = 'fill 200ms ease';
+function applyGroupsToMap(groups, countries) {
+  const groupIndex = buildGroupIndex(groups);
+
+  countries.forEach(({ id, element, name }) => {
+    const group = groupIndex.get(id);
+    const color = group?.color;
+    element.classList.add('country-path');
+    element.style.transition = 'fill 200ms ease, stroke 200ms ease';
     element.style.fill = color || '#1f2937';
     element.style.stroke = color ? 'rgba(255,255,255,0.35)' : '#0f172a';
     element.style.cursor = 'pointer';
+    element.setAttribute('aria-label', `${name} (${id})${group ? `, groupe ${group.name}` : ''}`);
   });
+
+  return groupIndex;
 }
 
 function Tooltip() {
@@ -467,8 +477,21 @@ function App() {
       state.backofficeHost
     );
     if (applyMap) {
-      applyGroupsToMap(config.groups, state.countries);
+      state.groupIndex = applyGroupsToMap(config.groups, state.countries);
     }
+    syncSelectedHighlight();
+  };
+
+  const syncSelectedHighlight = () => {
+    state.countries.forEach((country) => {
+      country.element.classList.toggle('selected', country.id === state.selectedCountry);
+    });
+  };
+
+  const handleSelectCountry = (country) => {
+    state.selectedCountry = country.id;
+    syncSelectedHighlight();
+    redrawBackoffice();
   };
 
   const showTooltip = (event, country) => {
@@ -476,8 +499,20 @@ function App() {
     if (!node) return;
     const values = config.values[country.id] || {};
     const quickFields = config.fields.filter((field) => field.display === 'quick');
+    const group = state.groupIndex?.get(country.id);
+
+    const primaryField = config.fields.find((field) => field.id === 'cpi2024') || quickFields[0];
+    const primaryValue = primaryField ? values[primaryField.id] ?? '—' : '—';
     node.innerHTML = '';
     node.appendChild(h('strong', null, `${country.name} (${country.id})`));
+
+    node.appendChild(
+      h('div', { className: 'tooltip-row' }, h('span', { className: 'label' }, 'Groupe'), h('span', { className: 'value' }, group?.name || 'Non assigné'))
+    );
+
+    node.appendChild(
+      h('div', { className: 'tooltip-row' }, h('span', { className: 'label' }, 'Valeur'), h('span', { className: 'value' }, primaryValue))
+    );
 
     if (quickFields.length === 0) {
       node.appendChild(h('p', { className: 'muted small' }, 'Aucun champ rapide configuré.'));
@@ -498,6 +533,7 @@ function App() {
 
   const openModal = (country) => {
     if (!state.modalNode) return;
+    handleSelectCountry(country);
     const values = config.values[country.id] || {};
     const modalBody = state.modalNode.querySelector('.modal-body');
     modalBody.innerHTML = '';
@@ -515,9 +551,15 @@ function App() {
   const attachCountryEvents = () => {
     state.countries.forEach((country) => {
       const element = country.element;
-      element.addEventListener('mouseenter', (event) => showTooltip(event, country));
+      element.addEventListener('mouseenter', (event) => {
+        element.classList.add('hovered');
+        showTooltip(event, country);
+      });
       element.addEventListener('mousemove', (event) => showTooltip(event, country));
-      element.addEventListener('mouseleave', hideTooltip);
+      element.addEventListener('mouseleave', () => {
+        element.classList.remove('hovered');
+        hideTooltip();
+      });
       element.addEventListener('click', () => openModal(country));
     });
   };
@@ -562,7 +604,7 @@ function App() {
     state.selectedCountry = state.countries[0]?.id || null;
 
     attachCountryEvents();
-    applyGroupsToMap(config.groups, state.countries);
+    state.groupIndex = applyGroupsToMap(config.groups, state.countries);
     tryPrefillData();
     redrawBackoffice();
   };
@@ -580,11 +622,11 @@ function App() {
     { className: 'page' },
     h(
       'main',
-      { className: 'map-area', role: 'main' },
+      { className: 'map-area', role: 'main', tabIndex: 0, ariaLabel: 'Carte interactive du monde', ariaDescribedby: 'map-instructions' },
       h(MapSurface, { onStageReady: handleStageReady }),
       h('div', { className: 'overlay-dock', role: 'complementary' },
         h('div', { className: 'panel' }, h('h3', null, 'Légende'), h('p', null, 'Zones colorées selon le statut de conformité des pays.')),
-        h('div', { className: 'panel' }, h('h3', null, 'Backoffice'), h('p', null, 'Gestion des groupes, données et fiches pays.'))
+        h('div', { className: 'panel' }, h('h3', null, 'Backoffice'), h('p', null, 'Utilisez les onglets pour gérer groupes, champs rapides et fiches pays. Les flèches déplacent la carte, +/- pour zoomer, 0 pour réinitialiser.'))
       ),
       h(ZoomControls, {
         getScale: () => mapState.scale,
@@ -596,12 +638,69 @@ function App() {
       modal
     ),
     backofficeMount,
+    h('div', { className: 'sr-only', id: 'map-instructions' },
+      'Navigation clavier : flèches pour déplacer la carte, plus ou égal pour zoomer, moins pour dézoomer, zéro pour réinitialiser, F pour centrer sur l’Europe. Les infobulles affichent nom, groupe, valeur et champs rapides configurés.'
+    ),
     h(Footer)
   );
+
+  const handleKeyControls = (event) => {
+    const step = 40;
+    let handled = false;
+    switch (event.key) {
+      case 'ArrowUp':
+        mapState.translateY += step;
+        handled = true;
+        break;
+      case 'ArrowDown':
+        mapState.translateY -= step;
+        handled = true;
+        break;
+      case 'ArrowLeft':
+        mapState.translateX += step;
+        handled = true;
+        break;
+      case 'ArrowRight':
+        mapState.translateX -= step;
+        handled = true;
+        break;
+      case '+':
+      case '=':
+        mapState.scale = clamp(mapState.scale + 0.1);
+        handled = true;
+        break;
+      case '-':
+        mapState.scale = clamp(mapState.scale - 0.1);
+        handled = true;
+        break;
+      case '0':
+        handleReset();
+        handled = true;
+        break;
+      case 'f':
+      case 'F':
+        handleFocusEurope();
+        handled = true;
+        break;
+      default:
+        break;
+    }
+
+    if (handled) {
+      applyTransform();
+      event.preventDefault();
+    }
+  };
+
+  window.addEventListener('keydown', handleKeyControls);
 
   setTimeout(() => {
     redrawBackoffice();
   }, 0);
+
+  window.addEventListener('beforeunload', () => {
+    window.removeEventListener('keydown', handleKeyControls);
+  });
 
   return layout;
 }

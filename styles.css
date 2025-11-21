@@ -200,6 +200,18 @@ body {
   font-weight: 600;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (max-width: 860px) {
   .overlay-dock {
     flex-direction: column;
@@ -481,6 +493,22 @@ body {
 
 .modal-row .label {
   color: var(--muted);
+}
+
+.country-path {
+  transition: fill 200ms ease, stroke 200ms ease, filter 150ms ease;
+  outline: none;
+}
+
+.country-path.hovered {
+  filter: brightness(1.1);
+  stroke-width: 1.5;
+}
+
+.country-path.selected {
+  stroke: #f97316 !important;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.6));
 }
 
 @media (max-width: 720px) {
