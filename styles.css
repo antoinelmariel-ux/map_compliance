@@ -1,0 +1,212 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --panel: #111827;
+  --accent: #38bdf8;
+  --muted: #cbd5e1;
+  --border: rgba(148, 163, 184, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: white;
+}
+
+#root,
+.page {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.map-area {
+  position: relative;
+  flex: 1;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  overflow: hidden;
+  background: radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.12), transparent 35%),
+    radial-gradient(circle at 80% 40%, rgba(45, 212, 191, 0.12), transparent 30%),
+    linear-gradient(135deg, #0b1221, #0b1629 40%, #0f172a);
+}
+
+.map-surface {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.map-surface object,
+.map-surface img,
+.map-surface svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.35));
+}
+
+.map-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--muted);
+  background: repeating-linear-gradient(
+      45deg,
+      rgba(56, 189, 248, 0.08),
+      rgba(56, 189, 248, 0.08) 10px,
+      rgba(59, 130, 246, 0.08) 10px,
+      rgba(59, 130, 246, 0.08) 20px
+    ),
+    rgba(17, 24, 39, 0.9);
+  border-radius: 12px;
+  border: 1px dashed var(--border);
+  text-align: center;
+  padding: 1rem;
+}
+
+.overlay-dock {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  padding: 0 1rem;
+  width: min(960px, 100%);
+}
+
+.panel {
+  flex: 1;
+  background: rgba(17, 24, 39, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.panel h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.panel p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.zoom-controls {
+  position: absolute;
+  right: 1rem;
+  bottom: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(17, 24, 39, 0.9);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.zoom-controls button {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(56, 189, 248, 0.12);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.zoom-controls button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+  background: rgba(56, 189, 248, 0.2);
+}
+
+.zoom-controls button:active {
+  transform: translateY(0);
+}
+
+.zoom-level {
+  min-width: 68px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  background: rgba(17, 24, 39, 0.95);
+  padding: 0.85rem 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.footer em {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .overlay-dock {
+    flex-direction: column;
+    bottom: 1rem;
+  }
+
+  .zoom-controls {
+    right: 0.75rem;
+    bottom: 8.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .zoom-controls {
+    left: 50%;
+    bottom: 10rem;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .zoom-controls button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
