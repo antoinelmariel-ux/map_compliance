@@ -1,0 +1,902 @@
+[
+  {
+    "Country / Territory": "Denmark",
+    "ISO3": "DNK",
+    "CPI 2024 score": "90"
+  },
+  {
+    "Country / Territory": "Finland",
+    "ISO3": "FIN",
+    "CPI 2024 score": "88"
+  },
+  {
+    "Country / Territory": "Singapore",
+    "ISO3": "SGP",
+    "CPI 2024 score": "84"
+  },
+  {
+    "Country / Territory": "New Zealand",
+    "ISO3": "NZL",
+    "CPI 2024 score": "83"
+  },
+  {
+    "Country / Territory": "Luxembourg",
+    "ISO3": "LUX",
+    "CPI 2024 score": "81"
+  },
+  {
+    "Country / Territory": "Norway",
+    "ISO3": "NOR",
+    "CPI 2024 score": "81"
+  },
+  {
+    "Country / Territory": "Switzerland",
+    "ISO3": "CHE",
+    "CPI 2024 score": "81"
+  },
+  {
+    "Country / Territory": "Sweden",
+    "ISO3": "SWE",
+    "CPI 2024 score": "80"
+  },
+  {
+    "Country / Territory": "Netherlands",
+    "ISO3": "NLD",
+    "CPI 2024 score": "78"
+  },
+  {
+    "Country / Territory": "Australia",
+    "ISO3": "AUS",
+    "CPI 2024 score": "77"
+  },
+  {
+    "Country / Territory": "Iceland",
+    "ISO3": "ISL",
+    "CPI 2024 score": "77"
+  },
+  {
+    "Country / Territory": "Ireland",
+    "ISO3": "IRL",
+    "CPI 2024 score": "77"
+  },
+  {
+    "Country / Territory": "Estonia",
+    "ISO3": "EST",
+    "CPI 2024 score": "76"
+  },
+  {
+    "Country / Territory": "Uruguay",
+    "ISO3": "URY",
+    "CPI 2024 score": "76"
+  },
+  {
+    "Country / Territory": "Canada",
+    "ISO3": "CAN",
+    "CPI 2024 score": "75"
+  },
+  {
+    "Country / Territory": "Germany",
+    "ISO3": "DEU",
+    "CPI 2024 score": "75"
+  },
+  {
+    "Country / Territory": "Hong Kong",
+    "ISO3": "HKG",
+    "CPI 2024 score": "74"
+  },
+  {
+    "Country / Territory": "Bhutan",
+    "ISO3": "BTN",
+    "CPI 2024 score": "72"
+  },
+  {
+    "Country / Territory": "Seychelles",
+    "ISO3": "SYC",
+    "CPI 2024 score": "72"
+  },
+  {
+    "Country / Territory": "Japan",
+    "ISO3": "JPN",
+    "CPI 2024 score": "71"
+  },
+  {
+    "Country / Territory": "United Kingdom",
+    "ISO3": "GBR",
+    "CPI 2024 score": "71"
+  },
+  {
+    "Country / Territory": "Belgium",
+    "ISO3": "BEL",
+    "CPI 2024 score": "69"
+  },
+  {
+    "Country / Territory": "Barbados",
+    "ISO3": "BRB",
+    "CPI 2024 score": "68"
+  },
+  {
+    "Country / Territory": "United Arab Emirates",
+    "ISO3": "ARE",
+    "CPI 2024 score": "68"
+  },
+  {
+    "Country / Territory": "Austria",
+    "ISO3": "AUT",
+    "CPI 2024 score": "67"
+  },
+  {
+    "Country / Territory": "France",
+    "ISO3": "FRA",
+    "CPI 2024 score": "67"
+  },
+  {
+    "Country / Territory": "Taiwan",
+    "ISO3": "TWN",
+    "CPI 2024 score": "67"
+  },
+  {
+    "Country / Territory": "Bahamas",
+    "ISO3": "BHS",
+    "CPI 2024 score": "65"
+  },
+  {
+    "Country / Territory": "United States",
+    "ISO3": "USA",
+    "CPI 2024 score": "65"
+  },
+  {
+    "Country / Territory": "Israel",
+    "ISO3": "ISR",
+    "CPI 2024 score": "64"
+  },
+  {
+    "Country / Territory": "Korea, South",
+    "ISO3": "KOR",
+    "CPI 2024 score": "64"
+  },
+  {
+    "Country / Territory": "Chile",
+    "ISO3": "CHL",
+    "CPI 2024 score": "63"
+  },
+  {
+    "Country / Territory": "Lithuania",
+    "ISO3": "LTU",
+    "CPI 2024 score": "63"
+  },
+  {
+    "Country / Territory": "Saint Vincent and the Grenadines",
+    "ISO3": "VCT",
+    "CPI 2024 score": "63"
+  },
+  {
+    "Country / Territory": "Cabo Verde",
+    "ISO3": "CPV",
+    "CPI 2024 score": "62"
+  },
+  {
+    "Country / Territory": "Dominica",
+    "ISO3": "DMA",
+    "CPI 2024 score": "60"
+  },
+  {
+    "Country / Territory": "Slovenia",
+    "ISO3": "SVN",
+    "CPI 2024 score": "60"
+  },
+  {
+    "Country / Territory": "Latvia",
+    "ISO3": "LVA",
+    "CPI 2024 score": "59"
+  },
+  {
+    "Country / Territory": "Qatar",
+    "ISO3": "QAT",
+    "CPI 2024 score": "59"
+  },
+  {
+    "Country / Territory": "Saudi Arabia",
+    "ISO3": "SAU",
+    "CPI 2024 score": "59"
+  },
+  {
+    "Country / Territory": "Saint Lucia",
+    "ISO3": "LCA",
+    "CPI 2024 score": "59"
+  },
+  {
+    "Country / Territory": "Costa Rica",
+    "ISO3": "CRI",
+    "CPI 2024 score": "58"
+  },
+  {
+    "Country / Territory": "Botswana",
+    "ISO3": "BWA",
+    "CPI 2024 score": "57"
+  },
+  {
+    "Country / Territory": "Portugal",
+    "ISO3": "PRT",
+    "CPI 2024 score": "57"
+  },
+  {
+    "Country / Territory": "Rwanda",
+    "ISO3": "RWA",
+    "CPI 2024 score": "57"
+  },
+  {
+    "Country / Territory": "Cyprus",
+    "ISO3": "CYP",
+    "CPI 2024 score": "56"
+  },
+  {
+    "Country / Territory": "Czechia",
+    "ISO3": "CZE",
+    "CPI 2024 score": "56"
+  },
+  {
+    "Country / Territory": "Grenada",
+    "ISO3": "GRD",
+    "CPI 2024 score": "56"
+  },
+  {
+    "Country / Territory": "Spain",
+    "ISO3": "ESP",
+    "CPI 2024 score": "56"
+  },
+  {
+    "Country / Territory": "Fiji",
+    "ISO3": "FJI",
+    "CPI 2024 score": "55"
+  },
+  {
+    "Country / Territory": "Oman",
+    "ISO3": "OMN",
+    "CPI 2024 score": "55"
+  },
+  {
+    "Country / Territory": "Italy",
+    "ISO3": "ITA",
+    "CPI 2024 score": "54"
+  },
+  {
+    "Country / Territory": "Bahrain",
+    "ISO3": "BHR",
+    "CPI 2024 score": "53"
+  },
+  {
+    "Country / Territory": "Georgia",
+    "ISO3": "GEO",
+    "CPI 2024 score": "53"
+  },
+  {
+    "Country / Territory": "Poland",
+    "ISO3": "POL",
+    "CPI 2024 score": "53"
+  },
+  {
+    "Country / Territory": "Mauritius",
+    "ISO3": "MUS",
+    "CPI 2024 score": "51"
+  },
+  {
+    "Country / Territory": "Malaysia",
+    "ISO3": "MYS",
+    "CPI 2024 score": "50"
+  },
+  {
+    "Country / Territory": "Vanuatu",
+    "ISO3": "VUT",
+    "CPI 2024 score": "50"
+  },
+  {
+    "Country / Territory": "Greece",
+    "ISO3": "GRC",
+    "CPI 2024 score": "49"
+  },
+  {
+    "Country / Territory": "Jordan",
+    "ISO3": "JOR",
+    "CPI 2024 score": "49"
+  },
+  {
+    "Country / Territory": "Namibia",
+    "ISO3": "NAM",
+    "CPI 2024 score": "49"
+  },
+  {
+    "Country / Territory": "Slovakia",
+    "ISO3": "SVK",
+    "CPI 2024 score": "49"
+  },
+  {
+    "Country / Territory": "Armenia",
+    "ISO3": "ARM",
+    "CPI 2024 score": "47"
+  },
+  {
+    "Country / Territory": "Croatia",
+    "ISO3": "HRV",
+    "CPI 2024 score": "47"
+  },
+  {
+    "Country / Territory": "Kuwait",
+    "ISO3": "KWT",
+    "CPI 2024 score": "46"
+  },
+  {
+    "Country / Territory": "Malta",
+    "ISO3": "MLT",
+    "CPI 2024 score": "46"
+  },
+  {
+    "Country / Territory": "Montenegro",
+    "ISO3": "MNE",
+    "CPI 2024 score": "46"
+  },
+  {
+    "Country / Territory": "Romania",
+    "ISO3": "ROU",
+    "CPI 2024 score": "46"
+  },
+  {
+    "Country / Territory": "Benin",
+    "ISO3": "BEN",
+    "CPI 2024 score": "45"
+  },
+  {
+    "Country / Territory": "Côte d'Ivoire",
+    "ISO3": "CIV",
+    "CPI 2024 score": "45"
+  },
+  {
+    "Country / Territory": "Senegal",
+    "ISO3": "SEN",
+    "CPI 2024 score": "45"
+  },
+  {
+    "Country / Territory": "Sao Tome and Principe",
+    "ISO3": "STP",
+    "CPI 2024 score": "45"
+  },
+  {
+    "Country / Territory": "Jamaica",
+    "ISO3": "JAM",
+    "CPI 2024 score": "44"
+  },
+  {
+    "Country / Territory": "Kosovo",
+    "ISO3": "KSV",
+    "CPI 2024 score": "44"
+  },
+  {
+    "Country / Territory": "Timor-Leste",
+    "ISO3": "TLS",
+    "CPI 2024 score": "44"
+  },
+  {
+    "Country / Territory": "Bulgaria",
+    "ISO3": "BGR",
+    "CPI 2024 score": "43"
+  },
+  {
+    "Country / Territory": "China",
+    "ISO3": "CHN",
+    "CPI 2024 score": "43"
+  },
+  {
+    "Country / Territory": "Moldova",
+    "ISO3": "MDA",
+    "CPI 2024 score": "43"
+  },
+  {
+    "Country / Territory": "Solomon Islands",
+    "ISO3": "SLB",
+    "CPI 2024 score": "43"
+  },
+  {
+    "Country / Territory": "Albania",
+    "ISO3": "ALB",
+    "CPI 2024 score": "42"
+  },
+  {
+    "Country / Territory": "Ghana",
+    "ISO3": "GHA",
+    "CPI 2024 score": "42"
+  },
+  {
+    "Country / Territory": "Burkina Faso",
+    "ISO3": "BFA",
+    "CPI 2024 score": "41"
+  },
+  {
+    "Country / Territory": "Cuba",
+    "ISO3": "CUB",
+    "CPI 2024 score": "41"
+  },
+  {
+    "Country / Territory": "Hungary",
+    "ISO3": "HUN",
+    "CPI 2024 score": "41"
+  },
+  {
+    "Country / Territory": "South Africa",
+    "ISO3": "ZAF",
+    "CPI 2024 score": "41"
+  },
+  {
+    "Country / Territory": "Tanzania",
+    "ISO3": "TZA",
+    "CPI 2024 score": "41"
+  },
+  {
+    "Country / Territory": "Trinidad and Tobago",
+    "ISO3": "TTO",
+    "CPI 2024 score": "41"
+  },
+  {
+    "Country / Territory": "Kazakhstan",
+    "ISO3": "KAZ",
+    "CPI 2024 score": "40"
+  },
+  {
+    "Country / Territory": "North Macedonia",
+    "ISO3": "MKD",
+    "CPI 2024 score": "40"
+  },
+  {
+    "Country / Territory": "Suriname",
+    "ISO3": "SUR",
+    "CPI 2024 score": "40"
+  },
+  {
+    "Country / Territory": "Vietnam",
+    "ISO3": "VNM",
+    "CPI 2024 score": "40"
+  },
+  {
+    "Country / Territory": "Colombia",
+    "ISO3": "COL",
+    "CPI 2024 score": "39"
+  },
+  {
+    "Country / Territory": "Guyana",
+    "ISO3": "GUY",
+    "CPI 2024 score": "39"
+  },
+  {
+    "Country / Territory": "Tunisia",
+    "ISO3": "TUN",
+    "CPI 2024 score": "39"
+  },
+  {
+    "Country / Territory": "Zambia",
+    "ISO3": "ZMB",
+    "CPI 2024 score": "39"
+  },
+  {
+    "Country / Territory": "Gambia",
+    "ISO3": "GMB",
+    "CPI 2024 score": "38"
+  },
+  {
+    "Country / Territory": "India",
+    "ISO3": "IND",
+    "CPI 2024 score": "38"
+  },
+  {
+    "Country / Territory": "Maldives",
+    "ISO3": "MDV",
+    "CPI 2024 score": "38"
+  },
+  {
+    "Country / Territory": "Argentina",
+    "ISO3": "ARG",
+    "CPI 2024 score": "37"
+  },
+  {
+    "Country / Territory": "Ethiopia",
+    "ISO3": "ETH",
+    "CPI 2024 score": "37"
+  },
+  {
+    "Country / Territory": "Indonesia",
+    "ISO3": "IDN",
+    "CPI 2024 score": "37"
+  },
+  {
+    "Country / Territory": "Lesotho",
+    "ISO3": "LSO",
+    "CPI 2024 score": "37"
+  },
+  {
+    "Country / Territory": "Morocco",
+    "ISO3": "MAR",
+    "CPI 2024 score": "37"
+  },
+  {
+    "Country / Territory": "Dominican Republic",
+    "ISO3": "DOM",
+    "CPI 2024 score": "36"
+  },
+  {
+    "Country / Territory": "Serbia",
+    "ISO3": "SRB",
+    "CPI 2024 score": "35"
+  },
+  {
+    "Country / Territory": "Ukraine",
+    "ISO3": "UKR",
+    "CPI 2024 score": "35"
+  },
+  {
+    "Country / Territory": "Algeria",
+    "ISO3": "DZA",
+    "CPI 2024 score": "34"
+  },
+  {
+    "Country / Territory": "Brazil",
+    "ISO3": "BRA",
+    "CPI 2024 score": "34"
+  },
+  {
+    "Country / Territory": "Malawi",
+    "ISO3": "MWI",
+    "CPI 2024 score": "34"
+  },
+  {
+    "Country / Territory": "Nepal",
+    "ISO3": "NPL",
+    "CPI 2024 score": "34"
+  },
+  {
+    "Country / Territory": "Niger",
+    "ISO3": "NER",
+    "CPI 2024 score": "34"
+  },
+  {
+    "Country / Territory": "Thailand",
+    "ISO3": "THA",
+    "CPI 2024 score": "34"
+  },
+  {
+    "Country / Territory": "Turkey",
+    "ISO3": "TUR",
+    "CPI 2024 score": "34"
+  },
+  {
+    "Country / Territory": "Belarus",
+    "ISO3": "BLR",
+    "CPI 2024 score": "33"
+  },
+  {
+    "Country / Territory": "Bosnia and Herzegovina",
+    "ISO3": "BIH",
+    "CPI 2024 score": "33"
+  },
+  {
+    "Country / Territory": "Laos",
+    "ISO3": "LAO",
+    "CPI 2024 score": "33"
+  },
+  {
+    "Country / Territory": "Mongolia",
+    "ISO3": "MNG",
+    "CPI 2024 score": "33"
+  },
+  {
+    "Country / Territory": "Panama",
+    "ISO3": "PAN",
+    "CPI 2024 score": "33"
+  },
+  {
+    "Country / Territory": "Philippines",
+    "ISO3": "PHL",
+    "CPI 2024 score": "33"
+  },
+  {
+    "Country / Territory": "Sierra Leone",
+    "ISO3": "SLE",
+    "CPI 2024 score": "33"
+  },
+  {
+    "Country / Territory": "Angola",
+    "ISO3": "AGO",
+    "CPI 2024 score": "32"
+  },
+  {
+    "Country / Territory": "Ecuador",
+    "ISO3": "ECU",
+    "CPI 2024 score": "32"
+  },
+  {
+    "Country / Territory": "Kenya",
+    "ISO3": "KEN",
+    "CPI 2024 score": "32"
+  },
+  {
+    "Country / Territory": "Sri Lanka",
+    "ISO3": "LKA",
+    "CPI 2024 score": "32"
+  },
+  {
+    "Country / Territory": "Togo",
+    "ISO3": "TGO",
+    "CPI 2024 score": "32"
+  },
+  {
+    "Country / Territory": "Uzbekistan",
+    "ISO3": "UZB",
+    "CPI 2024 score": "32"
+  },
+  {
+    "Country / Territory": "Djibouti",
+    "ISO3": "DJI",
+    "CPI 2024 score": "31"
+  },
+  {
+    "Country / Territory": "Papua New Guinea",
+    "ISO3": "PNG",
+    "CPI 2024 score": "31"
+  },
+  {
+    "Country / Territory": "Peru",
+    "ISO3": "PER",
+    "CPI 2024 score": "31"
+  },
+  {
+    "Country / Territory": "Egypt",
+    "ISO3": "EGY",
+    "CPI 2024 score": "30"
+  },
+  {
+    "Country / Territory": "El Salvador",
+    "ISO3": "SLV",
+    "CPI 2024 score": "30"
+  },
+  {
+    "Country / Territory": "Mauritania",
+    "ISO3": "MRT",
+    "CPI 2024 score": "30"
+  },
+  {
+    "Country / Territory": "Bolivia",
+    "ISO3": "BOL",
+    "CPI 2024 score": "28"
+  },
+  {
+    "Country / Territory": "Guinea",
+    "ISO3": "GIN",
+    "CPI 2024 score": "28"
+  },
+  {
+    "Country / Territory": "Eswatini",
+    "ISO3": "SWZ",
+    "CPI 2024 score": "27"
+  },
+  {
+    "Country / Territory": "Gabon",
+    "ISO3": "GAB",
+    "CPI 2024 score": "27"
+  },
+  {
+    "Country / Territory": "Liberia",
+    "ISO3": "LBR",
+    "CPI 2024 score": "27"
+  },
+  {
+    "Country / Territory": "Mali",
+    "ISO3": "MLI",
+    "CPI 2024 score": "27"
+  },
+  {
+    "Country / Territory": "Pakistan",
+    "ISO3": "PAK",
+    "CPI 2024 score": "27"
+  },
+  {
+    "Country / Territory": "Cameroon",
+    "ISO3": "CMR",
+    "CPI 2024 score": "26"
+  },
+  {
+    "Country / Territory": "Iraq",
+    "ISO3": "IRQ",
+    "CPI 2024 score": "26"
+  },
+  {
+    "Country / Territory": "Madagascar",
+    "ISO3": "MDG",
+    "CPI 2024 score": "26"
+  },
+  {
+    "Country / Territory": "Mexico",
+    "ISO3": "MEX",
+    "CPI 2024 score": "26"
+  },
+  {
+    "Country / Territory": "Nigeria",
+    "ISO3": "NGA",
+    "CPI 2024 score": "26"
+  },
+  {
+    "Country / Territory": "Uganda",
+    "ISO3": "UGA",
+    "CPI 2024 score": "26"
+  },
+  {
+    "Country / Territory": "Guatemala",
+    "ISO3": "GTM",
+    "CPI 2024 score": "25"
+  },
+  {
+    "Country / Territory": "Kyrgyzstan",
+    "ISO3": "KGZ",
+    "CPI 2024 score": "25"
+  },
+  {
+    "Country / Territory": "Mozambique",
+    "ISO3": "MOZ",
+    "CPI 2024 score": "25"
+  },
+  {
+    "Country / Territory": "Central African Republic",
+    "ISO3": "CAF",
+    "CPI 2024 score": "24"
+  },
+  {
+    "Country / Territory": "Paraguay",
+    "ISO3": "PRY",
+    "CPI 2024 score": "24"
+  },
+  {
+    "Country / Territory": "Bangladesh",
+    "ISO3": "BGD",
+    "CPI 2024 score": "23"
+  },
+  {
+    "Country / Territory": "Congo",
+    "ISO3": "COG",
+    "CPI 2024 score": "23"
+  },
+  {
+    "Country / Territory": "Iran",
+    "ISO3": "IRN",
+    "CPI 2024 score": "23"
+  },
+  {
+    "Country / Territory": "Azerbaijan",
+    "ISO3": "AZE",
+    "CPI 2024 score": "22"
+  },
+  {
+    "Country / Territory": "Honduras",
+    "ISO3": "HND",
+    "CPI 2024 score": "22"
+  },
+  {
+    "Country / Territory": "Lebanon",
+    "ISO3": "LBN",
+    "CPI 2024 score": "22"
+  },
+  {
+    "Country / Territory": "Russia",
+    "ISO3": "RUS",
+    "CPI 2024 score": "22"
+  },
+  {
+    "Country / Territory": "Cambodia",
+    "ISO3": "KHM",
+    "CPI 2024 score": "21"
+  },
+  {
+    "Country / Territory": "Chad",
+    "ISO3": "TCD",
+    "CPI 2024 score": "21"
+  },
+  {
+    "Country / Territory": "Comoros",
+    "ISO3": "COM",
+    "CPI 2024 score": "21"
+  },
+  {
+    "Country / Territory": "Guinea-Bissau",
+    "ISO3": "GNB",
+    "CPI 2024 score": "21"
+  },
+  {
+    "Country / Territory": "Zimbabwe",
+    "ISO3": "ZWE",
+    "CPI 2024 score": "21"
+  },
+  {
+    "Country / Territory": "Democratic Republic of the Congo",
+    "ISO3": "COD",
+    "CPI 2024 score": "20"
+  },
+  {
+    "Country / Territory": "Tajikistan",
+    "ISO3": "TJK",
+    "CPI 2024 score": "19"
+  },
+  {
+    "Country / Territory": "Afghanistan",
+    "ISO3": "AFG",
+    "CPI 2024 score": "17"
+  },
+  {
+    "Country / Territory": "Burundi",
+    "ISO3": "BDI",
+    "CPI 2024 score": "17"
+  },
+  {
+    "Country / Territory": "Turkmenistan",
+    "ISO3": "TKM",
+    "CPI 2024 score": "17"
+  },
+  {
+    "Country / Territory": "Haiti",
+    "ISO3": "HTI",
+    "CPI 2024 score": "16"
+  },
+  {
+    "Country / Territory": "Myanmar",
+    "ISO3": "MMR",
+    "CPI 2024 score": "16"
+  },
+  {
+    "Country / Territory": "Korea, North",
+    "ISO3": "PRK",
+    "CPI 2024 score": "15"
+  },
+  {
+    "Country / Territory": "Sudan",
+    "ISO3": "SDN",
+    "CPI 2024 score": "15"
+  },
+  {
+    "Country / Territory": "Nicaragua",
+    "ISO3": "NIC",
+    "CPI 2024 score": "14"
+  },
+  {
+    "Country / Territory": "Equatorial Guinea",
+    "ISO3": "GNQ",
+    "CPI 2024 score": "13"
+  },
+  {
+    "Country / Territory": "Eritrea",
+    "ISO3": "ERI",
+    "CPI 2024 score": "13"
+  },
+  {
+    "Country / Territory": "Libya",
+    "ISO3": "LBY",
+    "CPI 2024 score": "13"
+  },
+  {
+    "Country / Territory": "Yemen",
+    "ISO3": "YEM",
+    "CPI 2024 score": "13"
+  },
+  {
+    "Country / Territory": "Syria",
+    "ISO3": "SYR",
+    "CPI 2024 score": "12"
+  },
+  {
+    "Country / Territory": "Venezuela",
+    "ISO3": "VEN",
+    "CPI 2024 score": "10"
+  },
+  {
+    "Country / Territory": "Somalia",
+    "ISO3": "SOM",
+    "CPI 2024 score": "9"
+  },
+  {
+    "Country / Territory": "South Sudan",
+    "ISO3": "SSD",
+    "CPI 2024 score": "8"
+  }
+]
