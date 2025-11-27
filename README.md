@@ -57,4 +57,4 @@ Le projet est compatible avec GitHub Pages :
 - Back-office en panneaux cartés pour une édition guidée.
 
 ## Version
-- Numéro de version affiché dans le footer : **1.0.1**.
+- Numéro de version affiché dans le footer : **1.0.2**.
