@@ -1,7 +1,7 @@
 const STORAGE_KEY = 'compliance-map-data';
 
 const defaultData = {
-  version: '1.0.3',
+  version: '1.0.4',
   activeDatasetId: 'default',
   datasets: [
     {

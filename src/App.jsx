@@ -142,7 +142,7 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        <span>Compliance Studio • Version 1.0.3</span>
+        <span>Compliance Studio • Version 1.0.4</span>
         <span>Les données sont stockées uniquement dans votre navigateur.</span>
       </footer>
 

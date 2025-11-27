@@ -48,8 +48,8 @@ src/
 
 ## Déploiement GitHub Pages
 Le projet est compatible avec GitHub Pages :
-- Construisez avec `npm run build`.
-- Publiez le contenu du dossier `dist/` (par exemple via l’action GitHub Pages ou `npm run deploy` si vous ajoutez un script dédié).
+- Construisez avec `npm run build` (le build est généré dans `docs/` pour être directement servi par GitHub Pages).
+- Publiez le contenu du dossier `docs/` (par exemple via l’action GitHub Pages ou en configurant la source Pages sur ce dossier).
 
 ## Accessibilité & UX
 - Design responsive (desktop/laptop), palette sombre, transitions douces.
@@ -57,4 +57,4 @@ Le projet est compatible avec GitHub Pages :
 - Back-office en panneaux cartés pour une édition guidée.
 
 ## Version
-- Numéro de version affiché dans le footer : **1.0.2**.
+- Numéro de version affiché dans le footer : **1.0.4**.
