@@ -1,6 +1,6 @@
 # Compliance Map (React + Vite)
 
-Application monopage de visualisation et d’édition de données de conformité par pays. Elle s’appuie sur une carte SVG interactive, un back-office intégré et le stockage local via `localStorage`. Aucun backend ni dépendance CDN n’est nécessaire.
+Application monopage de visualisation et d’édition de données de conformité par pays. Elle s’appuie sur une carte SVG interactive, un back-office intégré et le stockage local via `localStorage`. Aucun backend ni dépendance CDN n’est nécessaire et tous les assets (dont la carte) sont embarqués pour fonctionner hors-ligne.
 
 ## Fonctionnalités principales
 - Carte du monde SVG interactive (hover + modal sur clic).
@@ -14,8 +14,8 @@ Application monopage de visualisation et d’édition de données de conformité
 ## Structure du projet
 ```
 public/
-  world.svg
 src/
+  assets/world.svg
   components/ (MapView, LegendPanel, AdminPanel, CountryModal, CountryForm)
   services/storageService.js
   App.jsx
@@ -57,4 +57,4 @@ Le projet est compatible avec GitHub Pages :
 - Back-office en panneaux cartés pour une édition guidée.
 
 ## Version
-- Numéro de version affiché dans le footer : **1.0.4**.
+- Numéro de version affiché dans le footer : **1.0.5**.

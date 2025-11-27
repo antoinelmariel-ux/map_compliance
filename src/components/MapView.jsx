@@ -1,23 +1,15 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import worldSvg from '../assets/world.svg?raw';
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 export default function MapView({ groups, countryValues, fields, countryDetails, onCountryClick, onHover }) {
   const containerRef = useRef(null);
-  const [svgContent, setSvgContent] = useState('');
+  const [svgContent] = useState(worldSvg || '<p>Carte indisponible</p>');
   const [scale, setScale] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
 
   const tooltipFields = useMemo(() => fields.filter((f) => f.inTooltip), [fields]);
-
-  useEffect(() => {
-    const svgPath = `${import.meta.env.BASE_URL}world.svg`;
-
-    fetch(svgPath)
-      .then((res) => res.text())
-      .then((text) => setSvgContent(text))
-      .catch(() => setSvgContent('<p>Carte indisponible</p>'));
-  }, []);
 
   useEffect(() => {
     if (!svgContent || !containerRef.current) return undefined;
