@@ -11,7 +11,9 @@ export default function MapView({ groups, countryValues, fields, countryDetails,
   const tooltipFields = useMemo(() => fields.filter((f) => f.inTooltip), [fields]);
 
   useEffect(() => {
-    fetch('/world.svg')
+    const svgPath = `${import.meta.env.BASE_URL}world.svg`;
+
+    fetch(svgPath)
       .then((res) => res.text())
       .then((text) => setSvgContent(text))
       .catch(() => setSvgContent('<p>Carte indisponible</p>'));
